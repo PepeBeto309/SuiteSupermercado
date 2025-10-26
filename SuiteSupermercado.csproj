@@ -46,6 +46,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="moduloCuentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="moduloCuentas.Designer.cs">
+      <DependentUpon>moduloCuentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="moduloClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="moduloClientes.Designer.cs">
+      <DependentUpon>moduloClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="moduloInventarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="moduloInventarios.Designer.cs">
+      <DependentUpon>moduloInventarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="moduloPuntoDeVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="moduloPuntoDeVenta.Designer.cs">
+      <DependentUpon>moduloPuntoDeVenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuPrinicpal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +81,9 @@
     <EmbeddedResource Include="MenuPrinicpal.resx">
       <DependentUpon>MenuPrinicpal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="moduloPuntoDeVenta.resx">
+      <DependentUpon>moduloPuntoDeVenta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -65,6 +92,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +106,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calculadora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seguimiento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transferencia-de-dinero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buscando.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cesta-de-la-compra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\perfil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bolsa-de-la-compra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recibo1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
