@@ -100,6 +100,7 @@
             this.Controls.Add(this.pbPuntoDeVenta);
             this.Name = "MenuPrinicpal";
             this.Text = "MicroCHEAT - Modulos";
+            this.Load += new System.EventHandler(this.MenuPrinicpal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

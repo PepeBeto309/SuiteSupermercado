@@ -1,4 +1,5 @@
 ﻿using System;
+using Npgsql;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace SuiteSupermercado
 {
     public partial class MenuPrinicpal : Form
@@ -16,7 +18,6 @@ namespace SuiteSupermercado
         private moduloInventarios formularioInventarios = null;
         private moduloClientes formularioClientes = null;
         private moduloCuentas formularioCuentas = null;
-
 
         public MenuPrinicpal()
         {
@@ -75,5 +76,15 @@ namespace SuiteSupermercado
             }
         }
 
+        private void MenuPrinicpal_Load(object sender, EventArgs e)
+        {
+            Datos datos = new Datos();
+            if (!datos.TestConnection())
+            {
+                MessageBox.Show("No se pudo establecer la conexión. Cierre la aplicación.", "Error de BD",
+                                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
+            }
+        }
     }
 }
